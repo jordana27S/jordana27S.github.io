@@ -1,0 +1,138 @@
+/* === Global Styles === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #111, #333);
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border-top: 4px solid #004aad;
+}
+
+main {
+  padding: 30px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Home Page Styling === */
+body.home {
+  background: linear-gradient(to bottom right, #ffffff, #f0f8ff);
+}
+
+.home h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.home .hero {
+  padding: 50px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Teams Page Styling === */
+body.teams {
+  background-color: #e6f0ff;
+}
+
+.teams section img {
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.teams section img:hover {
+  transform: scale(1.05);
+}
+
+.teams section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+/* === Fan Zone Styling === */
+body.fan-zone {
+  background: repeating-linear-gradient(45deg, #fefefe, #fefefe 10px, #e0e0e0 10px, #e0e0e0 20px);
+}
+
+.fan-zone form {
+  background-color: #ffffff;
+  padding: 25px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fan-zone input, .fan-zone textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+.fan-zone button, .fan-zone input[type="submit"] {
+  padding: 12px 24px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fan-zone button:hover, .fan-zone input[type="submit"]:hover {
+  background-color: #002e80;
+}
+
