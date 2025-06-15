@@ -1,4 +1,5 @@
 /* === Global Styles === */
+/* Apply consistent font, background, and text formatting across the whole website */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -8,6 +9,8 @@ body {
   line-height: 1.6;
 }
 
+/* === Header Styling === */
+/* Style the header with a dark gradient, center alignment, and drop shadow */
 header {
   background: linear-gradient(to right, #111, #333);
   color: white;
@@ -16,6 +19,8 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* === Navigation Bar === */
+/* Align nav links horizontally with spacing and no default list styling */
 nav ul {
   list-style: none;
   display: flex;
@@ -25,6 +30,7 @@ nav ul {
   margin: 15px 0 0 0;
 }
 
+/* Style the navigation links */
 nav a {
   color: white;
   text-decoration: none;
@@ -33,10 +39,13 @@ nav a {
   transition: color 0.3s ease;
 }
 
+/* Add hover effect to nav links */
 nav a:hover {
   color: #ffd700;
 }
 
+/* === Footer Styling === */
+/* Footer with dark background, centered text, and top border for emphasis */
 footer {
   background-color: #111;
   color: white;
@@ -46,26 +55,32 @@ footer {
   border-top: 4px solid #004aad;
 }
 
+/* === Page Load Animation === */
+/* Smooth fade-in animation when the page loads */
 main {
   padding: 30px;
   animation: fadeIn 1s ease-in;
 }
 
+/* Keyframes for fade-in effect */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* === Home Page Styling === */
+/* === Home Page Specific Styles === */
+/* Gradient background and extra header styles for the home page */
 body.home {
   background: linear-gradient(to bottom right, #ffffff, #f0f8ff);
 }
 
+/* Larger site title and shadow for impact */
 .home h1 {
   font-size: 40px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Hero section styling (not used currently but pre-defined) */
 .home .hero {
   padding: 50px;
   text-align: center;
@@ -74,21 +89,25 @@ body.home {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* === Teams Page Styling === */
+/* === Teams Page Specific Styles === */
+/* Light blue background for contrast */
 body.teams {
   background-color: #e6f0ff;
 }
 
+/* Player images styling - rounded corners and hover zoom effect */
 .teams section img {
   border-radius: 12px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
+/* Slight zoom on hover to make it interactive */
 .teams section img:hover {
   transform: scale(1.05);
 }
 
+/* Flex layout for team sections to make it responsive */
 .teams section {
   display: flex;
   flex-wrap: wrap;
@@ -96,11 +115,13 @@ body.teams {
   gap: 30px;
 }
 
-/* === Fan Zone Styling === */
+/* === Fan Zone Specific Styles === */
+/* Patterned background to make the fan zone feel fun and distinct */
 body.fan-zone {
   background: repeating-linear-gradient(45deg, #fefefe, #fefefe 10px, #e0e0e0 10px, #e0e0e0 20px);
 }
 
+/* Style the entire form with white background and soft box-shadow */
 .fan-zone form {
   background-color: #ffffff;
   padding: 25px;
@@ -111,7 +132,9 @@ body.fan-zone {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.fan-zone input, .fan-zone textarea {
+/* Style for all input fields and text areas */
+.fan-zone input,
+.fan-zone textarea {
   width: 100%;
   padding: 12px;
   margin-top: 12px;
@@ -121,7 +144,9 @@ body.fan-zone {
   font-size: 16px;
 }
 
-.fan-zone button, .fan-zone input[type="submit"] {
+/* Submit button styling for consistency and modern look */
+.fan-zone button,
+.fan-zone input[type="submit"] {
   padding: 12px 24px;
   background-color: #004aad;
   color: white;
@@ -132,7 +157,19 @@ body.fan-zone {
   transition: background-color 0.3s ease;
 }
 
-.fan-zone button:hover, .fan-zone input[type="submit"]:hover {
+/* Change button color on hover */
+.fan-zone button:hover,
+.fan-zone input[type="submit"]:hover {
   background-color: #002e80;
 }
+
+/* === Highlighted Section Using ID === */
+/* Use this ID to draw attention to a specific area (used in Fan Zone) */
+#vote-section {
+  background-color: #fdf4dc;
+  padding: 20px;
+  border-left: 5px solid #004aad;
+  margin-bottom: 30px;
+}
+
 
